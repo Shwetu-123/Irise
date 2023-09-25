@@ -1,0 +1,19 @@
+h1 {color: blue;
+	/*background-color:skyblue;*/
+	padding:20px;
+	border: 10px solid green;
+	background-image: linear-gradient(to left,orange,white,green);
+	text-shadow:0 0 5px red;
+}
+p {border: 2px solid black;
+    color: white;
+padding:10px;
+/* text-indent: 30px; */
+text-align: justify;
+line-height: 20px;
+word-spacing:4px;
+letter-spacing:2px;
+text-align: center;
+}
+/* p:hover {background-color:skyblue;
+font-family: cursive; } */
