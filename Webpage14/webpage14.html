@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage14</title>
+
+    <style>
+        .parent{
+            height: 300px;width: 23%; border: solid red 2px;
+            display: flex;justify-content: space-around;flex-wrap: wrap;
+        }
+        .child1{
+            height: 50px;width: 23%; border: solid red 2px;
+            display: flex;justify-content: space-around;flex-wrap: wrap;
+
+        }
+        .child2{
+            width: 23%;
+            /* justify-content: space-between; */
+            display: flex;
+            border: solid red 2px;
+            /* flex-wrap: wrap;
+            flex-direction: row; */
+        }
+        @media  screen and (min-width:0px ) and (max-width: 470px){
+            .parent{
+                width: 45%
+            }
+            #parentid{ 
+                flex-direction:column;
+
+            }
+            .child1{
+                width:100% ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div style="display: flex;justify-content: space-around;flex-wrap: wrap;">
+        <div class="parent">1</div>
+        <div class="parent" id="parentid">
+            <div class="child1">2.1</div>
+            <div class="child1">2.2</div>
+            <div class="child1">2.3</div>
+            <div class="child1">2.4</div>
+        </div>
+        <div class="parent" id="parent3.1">
+            <div class="child2">3.1</div>
+            <div class="child2">3.2</div>
+            <div class="child2">3.3</div>
+            <div class="child2">3.4</div>
+        </div>
+        <div class="parent">4</div>
+    </div>
+    
+</body>
+</html>
