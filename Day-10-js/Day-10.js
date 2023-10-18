@@ -7,14 +7,14 @@ var obj ={Studentlist:20,StudentNames:['Ram','Raghav','Kunal','Priya']}
 }
 function RetriveData()
 {
-    const dataFromLs = JSON.parse(localStorage.getItem("myData"))
+    const dataFromLs = JSON.parse(localStorage.getItem("myStudent"))
     console.log(dataFromLs,"- Data here")
-    // alert(`${dataFromLs.obj} "- Studentlist."`)
+    alert(`${dataFromLs.obj} "- Studentlist."`)
     return
 }
 
 function DeleteData()
 {
-    localStorage.removeItem("myData")
+    localStorage.removeItem("myStudent")
     alert("Data Delete Successfully")
 }
